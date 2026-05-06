@@ -34,13 +34,13 @@ class _AddEstacionScreenState extends State<AddEstacionScreen> {
       if (success) {
         if (!mounted) return;
         ScaffoldMessenger.of(context).showSnackBar(
-          const SnackBar(content: Text('✅ Estación guardada con éxito')),
+          const SnackBar(content: Text('Estación guardada con éxito')),
         );
         Navigator.pop(context, true); // Regresa al Home y avisa que hubo cambios
       } else {
         if (!mounted) return;
         ScaffoldMessenger.of(context).showSnackBar(
-          const SnackBar(content: Text('❌ Error al guardar. Verifique su sesión.')),
+          const SnackBar(content: Text('Error al guardar. Verifique su sesión.')),
         );
       }
     }
